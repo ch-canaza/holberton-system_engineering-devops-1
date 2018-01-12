@@ -1,4 +1,5 @@
 In this project, I have created scripts related to I/O redirection and filters. 
+
 0. print "Hello, World" plus a new line to the standard output
 1. Display confused smiley "(Ôo)'
 2. Display content of /etc/passwd
@@ -7,7 +8,7 @@ In this project, I have created scripts related to I/O redirection and filters.
 5. Display first 10 lines of /etc/passwd
 6. Display third line of file iacta
 7. Write the result of command ls -la in the file ls_cwd_content
-8. Create a file named '\*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)' containing the text 'Holberton School' and ending by a new line
+8. Create a file containing the text 'Holberton School' and ending by a new line
 9. Duplicate the last line of 'iacta'
 10. Delete all regular files with a .js extension 
 11. Count number of directories and sub-directories in current directory
