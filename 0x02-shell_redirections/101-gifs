@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a -R -s | find -name "*.gif" | tr -d ".gif"
+ls -a -R -s | find -name "*.gif" -printf '%f \n' | tr -d ".gif"
