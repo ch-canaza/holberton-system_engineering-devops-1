@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# comment here
+
+FILE=/etc/passwd
+while read -r LINE
+do
+    echo "$LINE" | cut -d":" -f1,4,7
+done < $FILE
