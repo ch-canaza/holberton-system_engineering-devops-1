@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# prints "Holberton School" 10 times, with "Hi" preceding the 10th time
+# prints "Holberton School" 10 times, with "bad luck" as 4th iteration and "good luck" as 8th iteration
 
 counter=1
 while [ $counter -le 10 ]
