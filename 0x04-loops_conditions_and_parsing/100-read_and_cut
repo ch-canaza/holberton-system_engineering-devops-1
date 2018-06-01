@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# comment here
+# displays the contents of the file /etc/passwd
 
 FILE=/etc/passwd
 while read -r LINE
