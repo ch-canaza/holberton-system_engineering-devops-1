@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# creates a file with its pid
+# displays 'To infinity..." indefinitely
+# displays set messages on SIGINT and SIGTERM
+# removes file and exit on SIGTERM and SIGQUIT
+
+FILE=/var/run/holbertonscript.pid
+sudo touch $FILE
+echo $$ > sudo $FILE
+trap "echo I hate the kill command ; sudo rm $FILE ; exit" SIGTERM
+trap "echo Y U no love me?!" SIGINT
+trap "sudo rm $FILE ; exit" SIGQUIT
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
