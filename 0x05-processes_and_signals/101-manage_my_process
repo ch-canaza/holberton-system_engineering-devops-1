@@ -7,9 +7,8 @@
 FILE=/var/run/my_process.pid
 case $1 in
     start)
-	sudo touch $FILE
 	./manage_my_process &
-	echo $$ > sudo $FILE
+	echo $$ > $FILE
 	echo "manage_my_process started"
 	;;
     stop)
@@ -20,9 +19,8 @@ case $1 in
     restart)
         pkill -f ./manage_my_process
         sudo rm $FILE
-	sudo touch $FILE
 	./manage_my_process &
-        echo $$ > sudo $FILE
+        echo $$ > $FILE
         echo "manage_my_process restarted"
 	;;
     *)
