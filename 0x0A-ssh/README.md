@@ -21,5 +21,5 @@ An introductory project on:
 **[1-create_ssh_key_pair](1-create_ssh_key_pair)** - Write a Bash script that creates a RSA key pair   
 
 **[2-ssh_config](2-ssh_config)** - Configure the SSH client configuration to:   
-				 * use the private key `~/.ssh/holberton`   
-				 * refuse to authenticate using a password   
+   * use the private key `~/.ssh/holberton`   
+   * refuse to authenticate using a password   
