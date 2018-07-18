@@ -6,6 +6,8 @@ sudo service nginx start
 echo "Ceci n'est pas une page :(" | sudo tee /usr/share/nginx/html/custom_404.html
 file="/etc/nginx/sites-available/default"
 sudo chmod +w $file
-cmd="\nerror_page 404 /custom_404.html;\nlocation = /custom_404.html {\nroot $/usr/share/nginx/html;\ninternal\n;}"
-sudo sed -i "40i $cmd" $file
+cmd1="location /redirect_me {\nreturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n}"
+sudo sed -i "37i $cmd1" $file
+cmd2="\nerror_page 404 /custom_404.html;\nlocation = /custom_404.html {\nroot $/usr/share/nginx/html;\ninternal\n;}"
+sudo sed -i "40i $cmd2" $file
 sudo service nginx restart
