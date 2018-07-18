@@ -2,5 +2,5 @@
 # configures new ubuntu machine with certain nginx requirements
 sudo apt-get install
 sudo apt-get update
-echo "Holberton School" > /usr/share/nginx/html/index.html
+echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
 service nginx restart
