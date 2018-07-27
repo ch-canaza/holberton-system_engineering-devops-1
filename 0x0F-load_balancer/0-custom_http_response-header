@@ -2,6 +2,6 @@
 # configures new server
 sudo apt-get update
 sudo apt-get -y install nginx
-FILE=etc/nginx/sites-available/default
-sudo sed -i "26i\\\tadd_header X-Served-By \$HOSTNAME;" $FILE
+file="etc/nginx/sites-available/default"
+sudo sed -i "26i \\\tadd_header X-Served-By \$hostname;" $file
 sudo service nginx restart
