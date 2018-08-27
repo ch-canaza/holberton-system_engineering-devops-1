@@ -21,7 +21,7 @@ def export_json(user_id):
     all_tasks = []
     for task in todo:
         current = {}
-        current['tasks'] = task.get('title')
+        current['task'] = task.get('title')
         current['completed'] = task.get('completed')
         current['username'] = name
         all_tasks.append(current)
