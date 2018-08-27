@@ -24,7 +24,7 @@ def get_info(employee_id):
         if task.get('completed'):
             done_tasks.append(task.get('title'))
             done_count += 1
-    print('Employee {} is done with tasks ({}/{}):'
+    print('Employee {} is done with tasks({}/{}):'
           .format(name, done_count, total_count))
     for task in done_tasks:
         print('\t {}'.format(task))
