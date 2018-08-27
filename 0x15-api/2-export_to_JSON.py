@@ -16,7 +16,7 @@ def export_json(user_id):
                         .format(user_id)).json()
     todo = requests.get('https://jsonplaceholder.typicode.com/todos?userId={}'
                         .format(user_id)).json()
-    name = user.get('name')
+    name = user.get('username')
     filename = user_id + '.json'
     all_tasks = []
     for task in todo:
