@@ -1,7 +1,6 @@
 #0x19. Postmortem
 
-!['this is fine' gif](https://tenor.com/wfui.gif)   
-
+!['this is fine' gif](https://media.giphy.com/media/z9AUvhAEiXOqA/giphy.gif)   
 
 ## Postmortem Report   
 
